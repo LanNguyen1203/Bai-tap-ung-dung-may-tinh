@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập ứng dụng máy tính</title>
+</head>
+<body>
+<h1>ỨNG DỤNG MÁY TÍNH</h1>
+<input id="edu1">
+<input id="edu2"><br>
+
+<button onclick="add()" >Addition(+)</button>
+<button value="-" onclick="sub()" >Subtraction(-)</button>
+<button value="*" onclick="multi()" >Multiplication(X)</button>
+<button value="/" onclick="div()" >Division(/)</button>
+
+<!--<div id="result" onclick="solve()">Result: </div>-->
+<!--<button id="result" onclick="solve()">Result</button>-->
+<p id = "edu3"> </p>
+</body>
+</html>
+<script>
+/*function dis(val) {
+    document.getElementById("edu1").value+=val
+    document.getElementById("edu2").value+=val
+}*/
+//function solve() {
+
+function add() {
+    let x = document.getElementById("edu1").value
+    let z = document.getElementById("edu2").value
+    let y
+    x = parseFloat(x); //2. chuyển kiểu dữ liệu về dạng số
+    z = parseFloat(z);
+y = z+x
+
+    document.getElementById("edu3").innerHTML = "Result: "+y
+}
+function sub() {
+    let x = document.getElementById("edu1").value
+    let z = document.getElementById("edu2").value
+    let y
+    x = parseFloat(x); //2. chuyển kiểu dữ liệu về dạng số
+    z = parseFloat(z);
+    y = x-z
+
+    document.getElementById("edu3").innerHTML = y
+}
+function multi() {
+    let x = document.getElementById("edu1").value
+    let z = document.getElementById("edu2").value
+    let y
+    x = parseFloat(x); //2. chuyển kiểu dữ liệu về dạng số
+    z = parseFloat(z);
+    y = x*z
+
+    document.getElementById("edu3").innerHTML = y
+}
+function div() {
+    let x = document.getElementById("edu1").value
+    let z = document.getElementById("edu2").value
+    let y
+    x = parseFloat(x); //2. chuyển kiểu dữ liệu về dạng số
+    z = parseFloat(z);
+    y = x/z
+
+    document.getElementById("edu3").innerHTML = y
+}
+</script>
